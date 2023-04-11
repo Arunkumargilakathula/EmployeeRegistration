@@ -25,6 +25,10 @@ public class EmployeeController {
 	public EmployeeService employeeService;
 
 	// save method...
+	
+	
+	
+	
 
 	@PostMapping("/saveDetails")
 	public ResponseEntity<EmployeePojo> createEmployeeDetails(@Valid @RequestBody EmployeePojo emp) {
@@ -40,7 +44,7 @@ public class EmployeeController {
 		}
 	}
 
-	// update method...
+	// update method {put} ...
 	@PutMapping("/update/{id}")
 	public ResponseEntity<EmployeeDetails> updateEmployee(@PathVariable("id") int empId,
 			@Valid @RequestBody EmployeePojo emp) {
